@@ -77,7 +77,7 @@
         <ul>
           <li><a href="index.php">Главная</a></li>
           <li><a href="#">Наши услуги</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="index.php#contact">Контакты</a></li>
           <li><a href="sign.php?action=login" class="sign">Войти</a></li>
         </ul>
       </nav>

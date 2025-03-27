@@ -231,8 +231,8 @@
       </div>
     </section>
 
-    <section class="contact">
-      <div class="container">
+    <section class="contact" >
+      <div class="container" id="contact">
         <h2>Контакты</h2>
         <p>Телефон: +7 (999) 999-99-99</p>
         <p>Адрес: г. Москва ул. Пушкино д. Никиты острецова</p>
