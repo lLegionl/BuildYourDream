@@ -98,6 +98,17 @@
     .confirm {
         gap: 10px;
     }
+    .confirm a {
+        color: #333;
+        text-decoration: none;
+        background-color:   #ccc;
+        border-radius: 90px;
+        padding:  5px 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Тень для контейнера */
+    }
+    .confirm a:hover {
+        background-color: #eee;
+    }
 </style>
 <body>
 <!DOCTYPE html>
@@ -109,14 +120,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php if (!empty($_GET['action']) && $_GET=='login')
+    <?php if (!empty($_GET['action']) && $_GET['action']=='login')
     {echo
     '<div class="form">
         <div class="container">
-            <form action="login.php" method="post">
+            <form action="auth.php?action=login" method="post">
             <ul>
-                <li><input type="text" placeholder="Логин"></li>
-                <li><input type="text" placeholder="Пароль"></li>
+                <li><input type="text" placeholder="Логин" name="login"></li>
+                <li><input type="text" placeholder="Пароль" name="password"></li>
                 <li class="confirm"><input type="submit">нет аккаунта?<a href="sign.php?action=reg">зарегистрироваться</a></li>
             </ul>
             </form>
@@ -126,13 +137,13 @@
 
     '<div class="form">
         <div class="container">
-            <form action="login.php" method="post">
+            <form action="auth.php?action=reg" method="post">
             <ul>
-                <li><input type="text" placeholder="Логин"></li>
-                <li><input type="text" placeholder="Имя"></li>
-                <li><input type="text" placeholder="Фамилия"></li>
-                <li><input type="text" placeholder="Номер телефона"></li>
-                <li><input type="text" placeholder="Пароль"></li>
+                <li><input type="text" placeholder="Логин" name="login"></li>
+                <li><input type="text" placeholder="Имя" name="name"></li>
+                <li><input type="text" placeholder="Фамилия" name="surname"></li>
+                <li><input type="text" placeholder="Номер телефона" name="phone"></li>
+                <li><input type="text" placeholder="Пароль" name="password"></li>
                 <li class="confirm"><input type="submit">есть аккаунт?<a href="sign.php?action=login">войти</a></li>
             </ul>
             </form>

@@ -75,7 +75,7 @@
       <h1>Построй свою мечту</h1>
       <nav>
         <ul>
-          <li><a href="#">О нас</a></li>
+          <li><a href="index.php">Главная</a></li>
           <li><a href="#">Наши услуги</a></li>
           <li><a href="#">Контакты</a></li>
           <li><a href="sign.php?action=login" class="sign">Войти</a></li>
