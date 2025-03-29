@@ -32,6 +32,9 @@
     }
 
     /* Стили для контейнера формы */
+    .form {
+        min-height: 1000px;
+    }
     .form .container {
         max-width: 400px; /* Максимальная ширина контейнера */
         margin: 50px auto; /* Центрирование контейнера */
@@ -142,6 +145,7 @@
                 <li><input type="text" placeholder="Логин" name="login"></li>
                 <li><input type="text" placeholder="Имя" name="name"></li>
                 <li><input type="text" placeholder="Фамилия" name="surname"></li>
+                <li><input type="text" placeholder="Почта" name="email"></li>
                 <li><input type="text" placeholder="Номер телефона" name="phone"></li>
                 <li><input type="text" placeholder="Пароль" name="password"></li>
                 <li class="confirm"><input type="submit">есть аккаунт?<a href="sign.php?action=login">войти</a></li>

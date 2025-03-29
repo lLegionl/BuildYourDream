@@ -16,7 +16,7 @@ session_start();
             $_SESSION['user_data']=$result;
     
 
-            header('Location:sign.php?message=success');
+            header('Location:account.php?tab=profile');
         }
         else header('Location:sign.php?message=error');
     }
@@ -24,12 +24,13 @@ session_start();
     {
         if (!empty($_POST['login']) && !empty($_POST['name'])  && !empty($_POST['surname'])  && !empty($_POST['phone']) && !empty($_POST['password']))
         {
-            $quary = $data->prepare('INSERT INTO `users` (`login`, `name`, `surname`, `phone`, `password`) VALUES (?,?,?,?,?)');
+            $quary = $data->prepare('INSERT INTO `users` (`login`, `name`, `surname`, `phone`,`email`, `password`) VALUES (?,?,?,?,?,?)');
 
             $user = $quary->execute([
                 $_POST['login'],
                 $_POST['name'],
                 $_POST['surname'],
+                $_POST['email'],
                 $_POST['phone'],
                 $_POST['password']
             ]);

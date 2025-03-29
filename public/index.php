@@ -63,7 +63,7 @@
     margin-bottom: 2rem;
     }
 
-    .hero-text button {
+    .hero-text a {
     background-color: #f08000;
     color: #fff;
     padding: 1rem 2rem;
@@ -71,6 +71,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+
+    text-decoration: none;
     }
 
     .hero-text button:hover {
@@ -94,7 +96,7 @@
     margin-bottom: 2rem;
     }
 
-    .about button {
+    .about a {
     background-color: #f08000;
     color: #fff;
     padding: 1rem 2rem;
@@ -102,6 +104,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+
+    text-decoration: none;
     }
 
     .about button:hover {
@@ -180,16 +184,16 @@
         <div class="hero-text">
           <h2>Построй свою мечту</h2>
           <p>Мы строим дома вашей мечты, учитывая все ваши пожелания.</p>
-          <button>Отправить заявку</button>
+          <a href="house.php">Выбрать</a>
         </div>
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2>О нас</h2>
         <p>Мы верим, что дом должен отражать личность и стиль жизни его владельца. Поэтому мы предлагаем индивидуальный подход к каждому проекту, учитывая все ваши пожелания и предпочтения. Мы с радостью поможем вам реализовать вашу мечту о комфортном и стильном жилье.</p>
-        <button>Связаться с нами</button>
+        <a href="index.php#contact">Связаться с нами</a>
       </div>
     </section>
 

@@ -33,6 +33,7 @@
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    margin-top: auto;
     }
     footer ul {
     list-style: none;
@@ -61,9 +62,9 @@
 <footer>
     <div class="container">
         <ul>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Наши услуги</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="index.php#about">О нас</a></li>
+          <li><a href="house.php">Ассортимент</a></li>
+          <li><a href="index.php#contact">Контакты</a></li>
         </ul>
       <p>&copy; 2025 Построй свою мечту</p>
     </div>
