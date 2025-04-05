@@ -181,12 +181,12 @@ $user_id = $_SESSION['id_user'];
         }
 
         .btn-cancel {
-            background-color: #dc3545;
+            background-color: #f44336;
             color: white;
         }
 
         .btn-cancel:hover {
-            background-color: #c82333;
+            background-color: #f44336a8;
         }
     </style>
 </head>

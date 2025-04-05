@@ -20,7 +20,7 @@
     }
     /* Подвал сайта */
     footer {
-    background-color: #f08000;
+    background-color: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
