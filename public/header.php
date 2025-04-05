@@ -27,9 +27,6 @@ session_start();
     margin: 0 auto;
     padding: 2rem;
     }
-    main .container {
-        background-color: #eee;
-    }
     /* Шапка сайта */
     header {
     background-color: #fff;
@@ -48,6 +45,7 @@ session_start();
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     }
 

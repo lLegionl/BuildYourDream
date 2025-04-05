@@ -10,8 +10,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стройте Свою Мечту</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <style>
         /* Общие стили */
     body {
@@ -31,11 +31,8 @@
     margin: 0 auto;
     padding: 2rem;
     }
-    main .container {
-        background-color: #eee;
-    }
     /* Основной контент */
-        .main {
+        main {
         padding: 4rem 0;
         background-color: #f5f5f5;
     }
@@ -55,14 +52,20 @@
         border: 2px solid #f08000;
         margin-bottom: 30px;
     }
-
+    
     .property-content-wrapper {
         display: flex;
         gap: 30px;
     }
+    .property-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
     .property-image {
-        flex: 0 0 50%;
+        flex: 0 1 70%;
         overflow: hidden;
         border-radius: 4px;
         background-color: #f5f5f5;
@@ -105,7 +108,6 @@
 
     .property-size {
         font-size: 18px;
-        color: #333;
         background-color: #f08020;
         padding: 4px 8px;
         border-radius: 4px;
@@ -117,24 +119,34 @@
         flex-direction: column;
         gap: 12px;
         margin-top: 15px;
+        box-sizing: border-box;
+
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    .property-details i {
+        color: #333;
+        width: 15px;
+        height: 15px;
     }
 
     .detail-row {
         display: flex;
-        justify-content: space-between;
         padding: 8px 0;
+        justify-content: space-between;
+        gap: 10px;
     }
 
     .detail-label {
         color: #666;
         font-weight: 500;
-        flex: 0 0 40%;
+        gap: 5px;
+        display: flex;
     }
 
     .detail-value {
         color: #333;
         font-weight: bold;
-        flex: 0 0 60%;
         text-align: right;
     }
 
@@ -187,6 +199,9 @@
     border-color: #f08000;
     box-shadow: 0 0 0 2px rgba(240, 128, 0, 0.2);
     }
+    .icons {
+        font-size: 0.9rem;
+    }
 
 </style>
 <body>
@@ -194,7 +209,7 @@
 <html lang="ru">
 <body>
 
-<div class="main">
+<main>
         <div class="container">
                     <?php 
                                 $quary = $data->query("SELECT * FROM houses where id = $house_id");
@@ -206,35 +221,40 @@
                 <span class="property-title"><?=$house['name']?></span>
                 <span class="property-size"><?=$house['square']?></span>
             </div>
-            
+            <div class="property-content">
             <div class="property-image">
                 <img src=".\images\house\<?=$house['images']?>" alt="Изображение объекта">
             </div>
             <div class="property_wrapper">
             <div class="property-details">
                 <div class="detail-row">
-                <span class="detail-label">Материалы:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-cubes icons"></i></label>
+                Материалы:</span>
                 <span class="detail-value"><?=$house['material']?></span>
                 </div>
 
                 <div class="detail-row">
-                <span class="detail-label">Этажей:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-layer-group icons"></i></label>
+                Этажей:</span>
                 <span class="detail-value"><?=$house['floor_count']?></span>
                 </div>
 
                 <div class="detail-row">
-                <span class="detail-label">спален:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-bed icons"></i></label>
+                спален:</span>
                 <span class="detail-value"><?=$house['bedrooms_count']?></span>
                 </div>
 
                 <div class="detail-row">
-                <span class="detail-label">сан-узлов:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-bath icons"></i></label>
+                сан-узлов:</span>
                 <span class="detail-value"><?=$house['sanitary_unit']?></span>
                 </div>
                 
                 <?php if (!empty($house['comfort'])){ echo
                 '<div class="detail-row">
-                <span class="detail-label">дополнительно:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-plus-circle icons"></i></label>
+                дополнительно:</span>
                 <span class="detail-value">'.$house['comfort'].'</span>
                 </div>';
                 }?>
@@ -251,11 +271,12 @@
 
                 </div>
             </div>
+            </div>
             <?}?>
             </div>
         </div>
-    </div>
-
+        </main>
+    <?php include "footer.php"; ?>
 </body>
+
 </html>
-<?php include "footer.php"; ?>

@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>footer</title>
-</head>
 <style>
     /* Общие стили */
     body {
@@ -24,9 +18,6 @@
     margin: 0 auto;
     padding: 2rem;
     }
-    main .container {
-        background-color: #eee;
-    }
     /* Подвал сайта */
     footer {
     background-color: #f08000;
@@ -34,6 +25,8 @@
     padding: 1rem 0;
     text-align: center;
     margin-top: auto;
+    display: flex;
+    align-content: flex-end;
     }
     footer ul {
     list-style: none;
@@ -57,7 +50,6 @@
     }
 
 </style>
-<body>
     
 <footer>
     <div class="container">
@@ -69,6 +61,3 @@
       <p>&copy; 2025 Построй свою мечту</p>
     </div>
   </footer>
-
-</body>
-</html>

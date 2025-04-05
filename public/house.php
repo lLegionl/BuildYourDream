@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стройте Свою Мечту</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <style>
         /* Общие стили */
     body {
@@ -210,6 +210,9 @@
     .action-row a:hover {
         background-color: #f08000b0;
     }
+    .icons {
+        font-size: 0.9rem;
+    }
 
 </style>
 <body>
@@ -236,33 +239,38 @@
             
             <div class="property-details">
                 <div class="detail-row">
-                <span class="detail-label">Материалы:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-cubes icons"></i></label>
+                Материалы:</span>
                 <span class="detail-value"><?=$house['material']?></span>
                 </div>
 
                 <div class="detail-row">
-                <span class="detail-label">Этажей:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-layer-group icons"></i></label>
+                Этажей:</span>
                 <span class="detail-value"><?=$house['floor_count']?></span>
                 </div>
 
                 <div class="detail-row">
-                <span class="detail-label">спален:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-bed icons"></i></label>
+                спален:</span>
                 <span class="detail-value"><?=$house['bedrooms_count']?></span>
                 </div>
 
                 <div class="detail-row">
-                <span class="detail-label">сан-узлов:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-bath icons"></i></label>
+                сан-узлов:</span>
                 <span class="detail-value"><?=$house['sanitary_unit']?></span>
                 </div>
                 
                 <?php if (!empty($house['comfort'])){ echo
                 '<div class="detail-row">
-                <span class="detail-label">дополнительно:</span>
+                <span class="detail-label"><label for="detaio-label"><i class="fas fa-plus-circle icons"></i></label>
+                дополнительно:</span>
                 <span class="detail-value">'.$house['comfort'].'</span>
                 </div>';
                 }?>
                 <div class="action-row">
-                    <a href="confirm.php?house=<?=$house['id']?>">Выбрать</a>
+                    <a href="confirm.php?house=<?=$house['id']?>"><i class="fas fa-arrow-right"></i> Выбрать</a>
                 </div>
      
             </div>
