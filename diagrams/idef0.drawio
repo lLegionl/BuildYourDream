@@ -56,8 +56,8 @@
         </mxCell>
         <mxCell id="SMpllXDM6xY1KrJ4E3cB-38" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="340" y="660" as="sourcePoint" />
-            <mxPoint x="340" y="585" as="targetPoint" />
+            <mxPoint x="320" y="660" as="sourcePoint" />
+            <mxPoint x="320" y="585" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SMpllXDM6xY1KrJ4E3cB-41" value="Архитекторы, инженеры" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=90;" parent="SMpllXDM6xY1KrJ4E3cB-38" vertex="1" connectable="0">
@@ -67,8 +67,8 @@
         </mxCell>
         <mxCell id="SMpllXDM6xY1KrJ4E3cB-39" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="660" as="sourcePoint" />
-            <mxPoint x="380" y="585" as="targetPoint" />
+            <mxPoint x="360" y="660" as="sourcePoint" />
+            <mxPoint x="360" y="585" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SMpllXDM6xY1KrJ4E3cB-42" value="Программное обеспечение&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=90;" parent="SMpllXDM6xY1KrJ4E3cB-39" vertex="1" connectable="0">
@@ -78,8 +78,8 @@
         </mxCell>
         <mxCell id="SMpllXDM6xY1KrJ4E3cB-40" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="420" y="660" as="sourcePoint" />
-            <mxPoint x="420" y="585" as="targetPoint" />
+            <mxPoint x="400" y="660" as="sourcePoint" />
+            <mxPoint x="400" y="585" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SMpllXDM6xY1KrJ4E3cB-43" value="Стройтельные компании" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=90;" parent="SMpllXDM6xY1KrJ4E3cB-40" vertex="1" connectable="0">
@@ -96,6 +96,17 @@
         <mxCell id="SMpllXDM6xY1KrJ4E3cB-49" value="готовый дом" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SMpllXDM6xY1KrJ4E3cB-46" vertex="1" connectable="0">
           <mxGeometry x="0.2127" y="2" relative="1" as="geometry">
             <mxPoint x="75" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XXMfDmDeAKZ0m0M44uOl-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="660" as="sourcePoint" />
+            <mxPoint x="430" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XXMfDmDeAKZ0m0M44uOl-2" value="данные участка" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=90;" vertex="1" connectable="0" parent="XXMfDmDeAKZ0m0M44uOl-1">
+          <mxGeometry x="-0.5937" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="65" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
