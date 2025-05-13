@@ -93,9 +93,9 @@
             <mxPoint x="550" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SMpllXDM6xY1KrJ4E3cB-49" value="готовый дом" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SMpllXDM6xY1KrJ4E3cB-46" vertex="1" connectable="0">
+        <mxCell id="SMpllXDM6xY1KrJ4E3cB-49" value="сдача готового обьекта" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SMpllXDM6xY1KrJ4E3cB-46" vertex="1" connectable="0">
           <mxGeometry x="0.2127" y="2" relative="1" as="geometry">
-            <mxPoint x="75" y="2" as="offset" />
+            <mxPoint x="95" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XXMfDmDeAKZ0m0M44uOl-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
